@@ -1,3 +1,9 @@
+/* Стили контейнера */
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
 /* === СТИЛИ СЛАЙДЕРА сделанного в 2015 году из UI Slider - Range with fixed minimum 
       Это выбрано из оригинаьлыных стилей 
 */
@@ -64,8 +70,8 @@
 .ui-widget-header { 
 	border: 1px solid #D4D4D4;
     /* цвет ЛЕВОЙ ЧАСТИ полосы,  */
-	/*background: #808080;   был цвет красный #f00*/
-    background-image: linear-gradient(to top, #5a30e5, #e8deeb);
+	/*background: #f00;   был цвет #808080 */
+    background-image: linear-gradient(to top, #5a30e5, #e8deeb); /**/
 }
 /* скругление для полосы слайдера */
 .ui-corner-all {

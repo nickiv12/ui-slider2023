@@ -9,7 +9,7 @@ $(document).ready(function () {
 		min: $min,
 		max: $max,
 		slide: function( event, ui ) {  // при перемещении ползунка будут:
-			console.log(ui.value);
+			console.log(ui.value);  // Смотрим положение ползунка на линии.
 			$("#val-01").text('значение ui:' + ui.value);
 			//$( "#val-"+$num ).html('<s>'+cssValue+': </s><u>'+ui.value +"</u>px");
 			//$('#'+elem_id).css(cssValue,ui.value); 
