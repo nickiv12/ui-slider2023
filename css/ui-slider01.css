@@ -1,0 +1,75 @@
+/* === СТИЛИ СЛАЙДЕРА сделанного в 2015 году из UI Slider - Range with fixed minimum 
+      Это выбрано из оригинаьлыных стилей 
+*/
+/* Контейнер слайдера */
+.ui-slider {
+	position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 20px;   /* Задаем нужную ширину */
+	height: 20px;  /* и высоту */
+    border-radius: 10px;
+	/*background: url(../img/slider.png) no-repeat;  картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+	/*background-color: blue;  Добавил 
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  
+    /*background-color: blue;*/
+    cursor: pointer
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+	/* height: 1.2vw;  задаем высоту согласно дизайна */
+	 /* height: 40px;  задаем высоту согласно дизайна */
+	 height: 10px;  /*задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+	top: -5px;
+	margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+/* оформление ПРАВОЙ части полосы по которой ходит ползунок */
+.ui-widget-content { 
+	border: 1px solid #D4D4D4;
+    /* цвет ПРАВОЙ ЧАСТИ ПОЛОСЫ */
+	/*background: #fff;  */
+    background-image: linear-gradient(to top, #C9C9C9, #ffffff);
+    /*background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);*/
+    
+}
+/* оформление  ЛЕВОЙ ЧАСТИ активного участка (между двумя ползунками) */
+.ui-widget-header { 
+	border: 1px solid #D4D4D4;
+    /* цвет ЛЕВОЙ ЧАСТИ полосы,  */
+	/*background: #808080;   был цвет красный #f00*/
+    background-image: linear-gradient(to top, #5a30e5, #e8deeb);
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
